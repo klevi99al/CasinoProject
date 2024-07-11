@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #333333, #000000);
+  font-family: 'Arial', sans-serif;
+}
+
+#phaser-game {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: #000;
+}
+
+
+.spin-button:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+.spin-button:active {
+  background-color: #1e7e34;
+  transform: scale(0.9);
+}
+
+.win-text {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffd700;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
