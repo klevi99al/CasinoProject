@@ -25,12 +25,12 @@ let winText;
 function preload() {
     const symbols = ['BONUS', '9', '10', 'A', 'H1', 'H2', 'H3', 'H4', 'H5', 'H6', 'J', 'K', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'Q'];
     symbols.forEach(symbol => {
-        this.load.image(`symbol${symbol}`, `/assets/images/${symbol}.png`);
+        this.load.image(`symbol${symbol}`, `./assets/images/${symbol}.png`);
     });
 
-    this.load.audio('spinSound', '/assets/sounds/spin.mp3');
+    this.load.audio('spinSound', './assets/sounds/spin.mp3');
     
-    this.load.image('slotMachineBorder', '/assets/images/slotMachineBorder.png');
+    this.load.image('slotMachineBorder', './assets/images/slotMachineBorder.png');
 }
 
 function create() {
